@@ -9,6 +9,7 @@ $light-gray: rgb(233, 233, 233);
 $medium-gray: rgb(204, 204, 204);
 $dark-gray: rgb(126, 126, 126);
 $pink:  rgb(240, 0, 80);
+$dark-pink:  rgb(165, 0, 55);
 $white: white;
 
 
@@ -86,6 +87,10 @@ h1 {
     font-weight: bold;
     text-decoration: none;
     text-align: center;
+
+    &:hover {
+        background-color: $dark-pink;
+    }
 }
 
 /* BOX2 */
@@ -108,6 +113,9 @@ h1 {
         i {
             font-size: xx-large;
         }
+    }
+    div:hover {
+        color: $pink;
     }
 }
 

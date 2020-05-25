@@ -69,6 +69,10 @@ h1 {
   text-align: center;
 }
 
+.button:hover {
+  background-color: #a50037;
+}
+
 /* BOX2 */
 .box2 {
   display: -webkit-box;
@@ -98,6 +102,10 @@ h1 {
 
 .box2 div i {
   font-size: xx-large;
+}
+
+.box2 div:hover {
+  color: #f00050;
 }
 
 /* BOX3 */
