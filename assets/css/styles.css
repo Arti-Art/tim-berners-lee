@@ -1,0 +1,193 @@
+/* FLEXBOX */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  margin-top: 25px;
+  -webkit-box-shadow: -1px 1px 2px #cccccc;
+          box-shadow: -1px 1px 2px #cccccc;
+}
+
+/* FONTS */
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* COLORS */
+body {
+  background-color: #e9e9e9;
+  color: #7e7e7e;
+}
+
+h1 {
+  color: #f00050;
+}
+
+/* BOX1 */
+.mainpic {
+  display: block;
+  margin: auto;
+  max-width: 150px;
+  border-radius: 50%;
+  border: 5px solid #cccccc;
+}
+
+.box1 h1, .box1 h2 {
+  text-align: center;
+}
+
+.button {
+  padding: 15px;
+  background-color: #f00050;
+  display: block;
+  margin: auto;
+  width: 150px;
+  border-radius: 5px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* BOX2 */
+.box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0;
+  min-height: 120px;
+}
+
+.box2 div {
+  min-width: 100px;
+  text-align: center;
+  margin: 15px 0px;
+  font-size: larger;
+  color: #cccccc;
+  font-family: "Open Sans", sans-serif;
+}
+
+.box2 div i {
+  font-size: xx-large;
+}
+
+/* BOX3 */
+.box3 {
+  margin-bottom: 25px;
+}
+
+.box3 h2, .box3 h3 {
+  text-align: center;
+}
+
+.box3 img {
+  max-width: 120px;
+  margin-top: 30px;
+}
+
+.box3 p {
+  text-align: justify;
+  margin-left: 20px;
+  font-size: 1.10rem;
+}
+
+.minigrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr;
+      grid-template-columns: 4fr;
+      grid-template-areas: "img1 title1 title1 title1" "img1 text1 text1 text1" "img2 title2 title2 title2" "img2 text2 text2 text2" "img3 title3 title3 title3" "img3 text3 text3 text3";
+}
+
+.img1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img1;
+}
+
+.img2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img2;
+}
+
+.img3 {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img3;
+}
+
+.title1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: title1;
+}
+
+.title2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: title2;
+}
+
+.title3 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: title3;
+}
+
+.text1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: text1;
+}
+
+.text2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: text2;
+}
+
+.text3 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: text3;
+}
+/*# sourceMappingURL=styles.css.map */

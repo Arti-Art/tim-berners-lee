@@ -1,0 +1,151 @@
+// @import "cssReset";
+
+// VAR-FONTS
+$montserrat: 'Montserrat', sans-serif;
+$openSans: 'Open Sans', sans-serif;
+
+// VAR-COLORS
+$light-gray: rgb(233, 233, 233);
+$medium-gray: rgb(204, 204, 204);
+$dark-gray: rgb(126, 126, 126);
+$pink:  rgb(240, 0, 80);
+$white: white;
+
+
+// COLOR-LINKS
+$buttonTextColor: $white;
+$buttonFont: $openSans;
+$img-border-color: $medium-gray;
+
+// MIXINS
+@mixin displayflex ($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+}
+
+/* FLEXBOX */
+.flex {
+    @include displayflex(column);
+    max-width: 700px;
+    margin: auto;
+}
+
+.box {
+    background-color: $white;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 25px;
+    box-shadow: -1px 1px 2px $medium-gray;
+}
+
+/* FONTS */
+h1, h2, h3 {
+    font-family: $montserrat;
+}
+
+p {
+    font-family: $openSans;
+}
+
+/* COLORS */
+body {
+    background-color: $light-gray;
+    color: $dark-gray;
+}
+
+h1 {
+    color: $pink;
+}
+
+/* BOX1 */
+
+.mainpic {
+    display: block;
+    margin: auto;
+    max-width: 150px;
+    border-radius: 50%;
+    border: 5px solid $img-border-color;
+}
+
+.box1 {
+    h1, h2 {
+        text-align: center;
+    }
+}
+
+.button {
+    padding: 15px;
+    background-color: $pink;
+    display: block;
+    margin: auto;
+    width: 150px;
+    border-radius: 5px;
+    color: $buttonTextColor;
+    font-family: $buttonFont;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* BOX2 */
+
+.box2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    min-height: 120px;
+    div {
+        min-width: 100px;
+        text-align: center;
+        margin: 15px 0px;
+        font-size: larger;
+        color: $medium-gray;
+        font-family: $openSans;
+        i {
+            font-size: xx-large;
+        }
+    }
+}
+
+/* BOX3 */
+
+.box3 {
+    h2, h3 {
+        text-align: center;
+    }
+    img {
+        max-width: 120px;
+        margin-top: 30px;
+    }
+    p {
+        text-align: justify;
+        margin-left: 20px;
+        font-size: 1.10rem;
+    }
+    margin-bottom: 25px;
+}
+
+.minigrid {
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-areas: 
+        "img1 title1 title1 title1"
+        "img1 text1 text1 text1"
+        "img2 title2 title2 title2"
+        "img2 text2 text2 text2"
+        "img3 title3 title3 title3"
+        "img3 text3 text3 text3";
+}
+.img1 {grid-area: img1;}
+.img2 {grid-area: img2;}
+.img3 {grid-area: img3;}
+.title1 {grid-area: title1;}
+.title2 {grid-area: title2;}
+.title3 {grid-area: title3;}
+.text1 {grid-area: text1;}
+.text2 {grid-area: text2;}
+.text3 {grid-area: text3;}
